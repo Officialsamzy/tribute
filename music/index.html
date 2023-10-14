@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMOLE</title>
+    <link rel="stylesheet" href="./music.css">
+</head>
+<body class="round">
+    <div class="container">
+        <div class="navbar">
+         <h2 style="font-size: 15px;">   official_samzy </h2>
+            <ul>
+                <li><a class="active" href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./connect.html">CONNECT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>TRIBUTE <br>TO <br> MOHBAD</h1>
+            </div>
+            <!--
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="./play.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="./Mohbad-Peace-(TrendyBeatz.com).mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+           if(mySong.paused){
+                mySong.play();
+                icon.src = "./pause.png";
+           }else{
+            mySong.pause();
+                icon.src = "./play.png";
+           }
+        }
+        function switchTrack() {
+            if(trackplaying === true) {
+                audi0.play();
+            }
+        }
+        const tracksrc = './song' + tracks[trackid] + ".mp3";
+
+        function loadtrack() {
+            audio.src = './song' + tracks[trackid] + ".mp3";
+
+            audio.load();
+        }
+            audio.addEventListener('loadeddata', () => {
+                setTime(fullTime, audio.duration);
+            })
+        
+    </script>
+    -->
+
+
+
+
+
+
+        <audio src="" id="audio"></audio>
+
+        <div class="music-player">
+            <h1 class="music-name">My Brother</h1>
+            <p class="artist-name">Bella Shmurda</p>
+
+            <div class="disk"></div>
+
+            <div class="song-slider">
+                <input type="range" value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+
+            <div class="controls">
+                <button class="btn backward-btn"><img src="./fi-rs-angle-small-left.svg" width="40px"></button>
+                <button class="play-btn pause">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn forward-btn"><img src="./fi-rs-angle-small-right.svg" width="40px"></button>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <script src="./data.js"></script>
+    <script src="./music.js"></script>
+
+
+
+
+</body>
+</html>
